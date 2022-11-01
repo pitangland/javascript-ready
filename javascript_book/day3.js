@@ -63,7 +63,8 @@ console.log(ind.endsWith('안녕'));      // false
 console.log("=====문자열 수정=====");
 const repl = 'What are you doing now? you';
 console.log(repl.replace('you', 'we'));     // 일치하는 첫번째 부분 교체.
-console.log(repl.replaceAll('you', 'we'));  // 일치하는 모든 부분 교체.
+// node 14에서는 지원하지 않는 듯.
+// console.log(repl.replaceAll('you', 'we'));  // 일치하는 모든 부분 교체.
 console.log(repl.substring(0,7));      // What ar
 console.log(repl.slice(5));            // are you doing now? you
 console.log(repl.slice(2, 7));         // at ar

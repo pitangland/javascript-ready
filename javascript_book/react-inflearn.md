@@ -15,4 +15,3 @@ false
 nullundefined
 NaN (not a number) 
 
--> 대략적으로 어떤지 알고 있어야 함.

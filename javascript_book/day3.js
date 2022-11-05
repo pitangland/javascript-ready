@@ -67,6 +67,7 @@ console.log(repl.replace('you', 'we'));     // 일치하는 첫번째 부분 교
 // console.log(repl.replaceAll('you', 'we'));  // 일치하는 모든 부분 교체.
 console.log(repl.substring(0,7));      // What ar
 console.log(repl.slice(5));            // are you doing now? you
+console.log(repl);
 console.log(repl.slice(2, 7));         // at ar
 console.log(repl.split(' '));
 

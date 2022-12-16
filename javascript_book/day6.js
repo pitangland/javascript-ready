@@ -1,4 +1,4 @@
-// 클래스 
+// 클래스
 
 // 클래스란? 객체 지향 프로그래밍을 정의하는 개념 중 하나
 //           똑같은 객체를 여러 번 다시 찍어내기 위한 틀. 즉, 템플릿.
@@ -11,15 +11,22 @@
 클래스와 인스턴스 생성
 */
 class User {
-    // 생성자 함수
-    constructor(name) {
-        this.name = name;
+  #name;
+  // 생성자 함수
+  constructor(name) {
+    this.validate(name);
+    this.#name = name;
+  }
+  validate(name) {
+    if (name !== "pitang") {
+      console.log("error"); //error
     }
-    printName() {
-        console.log(this.name);
-    }
+  }
+  printName() {
+    console.log(this.name); // undefined
+  }
 }
-const aUser = new User('Pitang');
+const aUser = new User("Pitang");
 aUser.printName();
 
 /*
@@ -42,13 +49,26 @@ instanceof 연산자? 좌변에 주어진 대상이 우변에 주어진 클래�
 생성자 오버라이딩
 */
 
+class User1 {
+  name = "John";
+  age = [3, 2, 1];
+  age = this.age.sort((a, b) => a - b);
+  printAge() {
+    // age.sort((a, b) => a - b);
+    console.log(this.age);
+  }
+}
+const bUser = new User1();
+console.log(bUser.name);
+console.log(bUser.age);
+
 // 구조 분해 할당
 
 // 구조 분해 할당이란? 배열 또는 객체의 구조를 분해하여, 그 값을 개별 변수에 담는 표현식을 의미.
 // 배열 구조 분해
 const arr = [1, 2, 3, 4, 5];
 const [one, two, three] = arr;
-console.log(one, two, three);   //1 2 3
+// console.log(one, two, three); //1 2 3
 
 // 객체 구조 분해
 // 함수 인자 구조 분해
@@ -87,3 +107,5 @@ HTML 문서에서 id 값은 중복 될 수 없는 유일 값.
 
 모듈 사용법 import and export
 */
+
+// 어떻게 해야하지?

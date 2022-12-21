@@ -104,6 +104,12 @@ function Blocks(props) {
             {/* 다시 다운로드 아이콘 생성 */}
             <Reload />
             <Line>공유하기 왜 안돼?</Line>
+            <hr />
+            <div display="flex">
+              <hr />
+              <div>공유하기</div>
+              <hr />
+            </div>
           </Block>
         );
       })}

@@ -18,7 +18,8 @@ import reportWebVitals from "./reportWebVitals";
 // import DarkOrLight from './chapter_14/DarkOrLight';
 // import Blocks from "./chapter_15/Blocks";
 // import ReduxPractice from "./redux-practice/redux-practice";
-import IconPractice from "./icon-practice/icon-practice";
+// import IconPractice from "./icon-practice/icon-practice";
+import TextPractice from "./text-practice/text-practice";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -27,7 +28,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <IconPractice />
+    <TextPractice />
   </React.StrictMode>,
   document.getElementById("root")
 );

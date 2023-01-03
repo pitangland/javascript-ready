@@ -43,6 +43,12 @@ function Blocks(props) {
   return (
     <Wrapper>
       <Content>{content}</Content>
+      <img
+        src={
+          "https://www.figma.com/file/Whi3bWeGIzJsqqPFZfgcbb/%EC%83%88%ED%95%B4%EB%B6%80%EC%A0%81?node-id=804%3A10679&t=p6MPE2TlM3dZi83b-4"
+        }
+        alt={"한번뛰어볼까?"}
+      />
     </Wrapper>
   );
 }

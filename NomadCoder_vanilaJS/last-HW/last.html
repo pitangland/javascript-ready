@@ -4,7 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./last.css" />
     <title>lastHW</title>
   </head>
-  <body></body>
+  <body>
+    <!-- 로그인 form -->
+    <div id="login" class="hidden">
+      <form id="login-form">
+        <input
+          required
+          type="text"
+          class="form-control mb-2"
+          maxlength="15"
+          placeholder="이름을 입력해주세요!"
+        />
+        <button type="submit" class="btn btn-secondary" value="Log In">
+          로그인
+        </button>
+      </form>
+    </div>
+
+    <!-- nickname과 weather 위치 -->
+    <div id="greeting" class="hidden">
+      <div id="nickName" class="hidden"></div>
+      <div id="weather">
+        <span></span>
+        &nbsp;
+        <span></span>
+      </div>
+    </div>
+
+    <div id="center">
+      <!-- d-day와 clock -->
+      <div id="dDay"></div>
+      <div id="clock"></div>
+
+      <!-- to do list -->
+      <form id="todo-form">
+        <input
+          type="text"
+          class="form-control mb-2"
+          placeholder="오늘 할일을 적고 엔터를 눌러주세요."
+          required
+        />
+      </form>
+
+      <ul id="todo-list" class="list-group list-group-flush"></ul>
+    </div>
+
+    <!-- 랜덤 명언 -->
+    <div id="quote">
+      <span style="color: yellow"></span>
+      <span style="color: cyan"></span>
+    </div>
+
+    <script src="./last-JS/backGround.js"></script>
+    <script src="./last-JS/login.js"></script>
+    <script src="./last-JS/weather.js"></script>
+    <script src="./last-JS/clock.js"></script>
+    <script src="./last-JS/dDay.js"></script>
+    <script src="./last-JS/todo.js"></script>
+    <script src="./last-JS/quote.js"></script>
+  </body>
 </html>

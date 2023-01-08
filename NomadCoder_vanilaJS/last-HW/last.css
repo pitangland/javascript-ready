@@ -1,1 +1,94 @@
+body {
+  height: 100vh;
+  width: 100%;
+}
 
+.hidden {
+  display: none;
+}
+
+#login-form {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+#login-form input {
+  margin: 0;
+  width: fit-content;
+}
+
+#login-form button {
+  margin-left: 2.5px;
+  height: 36px;
+}
+
+#nickName {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#weather {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#center {
+  margin-top: 120px;
+}
+
+#dDay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+}
+
+#clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  font-size: 100px;
+  font-weight: 600;
+}
+
+#todo-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#todo-form input {
+  width: 500px;
+  margin: auto;
+}
+
+#todo-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  margin-bottom: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
